@@ -24,7 +24,8 @@ iputils-ping \
 tmux \
 neovim \
 peass \
-sliver 
+sliver \
+metasploit-framework
 
 
 #Set Zsh as Default
