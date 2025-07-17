@@ -2,6 +2,8 @@ FROM kalilinux/kali-rolling
 LABEL maintainer="zetta@waifu.club"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN=true
+ENV DISPLAY=:0
+
 
 RUN echo "nameserver 8.8.8.8" >> /etc/resolve.conf && echo "nameserver 1.1.1.1" >> /etc/resolve.conf
 
@@ -29,7 +31,8 @@ peass \
 sliver \
 metasploit-framework \
 gdb \
-pipx
+pipx \
+firefox
 
 #PwnDBG set up
 RUN git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
