@@ -15,7 +15,6 @@ amass \
 dirsearch \
 sqlmap \
 gobuster \
-sqlmap \
 seclists \
 git \
 python3 \
