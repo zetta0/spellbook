@@ -3,9 +3,10 @@ LABEL maintainer="zetta@waifu.club"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN=true
 ENV DISPLAY=:0
-
+ENV PATH="/root/go/bin:${PATH}"
 
 RUN echo "nameserver 8.8.8.8" >> /etc/resolve.conf && echo "nameserver 1.1.1.1" >> /etc/resolve.conf
+
 
 RUN apt update && apt upgrade -y && \
 apt install -y \
@@ -31,7 +32,7 @@ sliver \
 metasploit-framework \
 gdb \
 pipx \
-firefox
+firefox-esr
 
 #PwnDBG set up
 RUN git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
@@ -44,6 +45,11 @@ RUN pipx install impacket
 
 #Set Zsh as Default
 RUN chsh -s $(which zsh)
-WORKDIR /root
+
+WORKDIR /root/sources
+COPY sources /root/sources
+
+RUN chmod +x goinstalls.sh
+RUN ./goinstalls.sh
 
 CMD ["zsh"]
