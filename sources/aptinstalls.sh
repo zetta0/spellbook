@@ -26,5 +26,6 @@ aptinstall(){
 	gdb \
 	pipx \
 	firefox-esr \
-	burpsuite
+	burpsuite \
+	ruby
 }

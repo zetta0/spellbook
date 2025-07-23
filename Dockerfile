@@ -10,6 +10,8 @@ COPY sources /root/sources
 RUN chmod +x installer.sh
 RUN ./installer.sh aptinstall
 RUN ./installer.sh goinstall
+RUN ./installer.sh geminstall
+
 #PwnDBG set up
 RUN git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
 #NetExec setup
