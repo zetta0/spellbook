@@ -8,8 +8,8 @@ RUN echo "nameserver 8.8.8.8" >> /etc/resolve.conf && echo "nameserver 1.1.1.1" 
 WORKDIR /root/sources
 COPY sources /root/sources
 RUN chmod +x installer.sh
-RUN ./installer.sh aptinstalls.sh
-RUN ./installer.sh goinstall.sh
+RUN ./installer.sh aptinstall
+RUN ./installer.sh goinstall
 #PwnDBG set up
 RUN git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
 #NetExec setup
