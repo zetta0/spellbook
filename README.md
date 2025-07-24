@@ -24,7 +24,7 @@ Then running the following the command allows us to pass our display env
 ```bash
 docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix spellbook
 ```
-To add tun devies to your docker image you must add this following option to your run command:
+To add tun devices to your docker image you must add this following option to your run command:
 
 ```bash
 --cap-add=NET_ADMIN --device=/dev/net/tun
