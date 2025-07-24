@@ -11,13 +11,9 @@ RUN chmod +x installer.sh
 RUN ./installer.sh aptinstall
 RUN ./installer.sh goinstall
 RUN ./installer.sh geminstall
+RUN ./installer.sh gitinstall
+RUN ./installer.sh pipxinstall
 
-#PwnDBG set up
-RUN git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
-#NetExec setup
-RUN pipx install git+https://github.com/Pennyw0rth/NetExec
-#Impacket
-RUN pipx install impacket
 #Set Zsh as Default
 RUN chsh -s $(which zsh)
 

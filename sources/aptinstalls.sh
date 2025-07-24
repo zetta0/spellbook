@@ -27,5 +27,6 @@ aptinstall(){
 	pipx \
 	firefox-esr \
 	burpsuite \
-	ruby
+	ruby \
+	feroxbuster
 }

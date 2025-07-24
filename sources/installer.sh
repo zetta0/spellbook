@@ -5,6 +5,8 @@ set -e
 source aptinstalls.sh
 source goinstalls.sh
 source geminstalls.sh
+source gitinstalls.sh
+source pipxinstalls.sh
 
 if [ $# -eq 0]; then
 	echo "Usage: $O <function name> [args...]"
