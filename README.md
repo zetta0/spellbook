@@ -22,7 +22,8 @@ List of tools so far:
 
 - amass 
 - curl 
-- dirsearch 
+- dirsearch
+- evil-winrm
 - ffuf 
 - firefox
 - gdb 
@@ -47,5 +48,6 @@ List of tools so far:
 - sqlmap 
 - subfinder
 - tmux 
-- wget 
+- wget
+- wpscan
 - zsh 
