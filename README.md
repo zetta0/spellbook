@@ -26,8 +26,7 @@ docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix spellbo
 ```
 To add tun devies to your docker image you must add this following option to your run command:
 
-```
-bash
+```bash
 --cap-add=NET_ADMIN --device=/dev/net/tun
 ```
 
