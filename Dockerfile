@@ -13,7 +13,7 @@ RUN ./installer.sh goinstall
 RUN ./installer.sh geminstall
 RUN ./installer.sh gitinstall
 RUN ./installer.sh pipxinstall
-
+RUN pipx ensurepath
 #Set Zsh as Default
 RUN chsh -s $(which zsh)
 
