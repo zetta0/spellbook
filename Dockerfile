@@ -3,7 +3,7 @@ LABEL maintainer="zetta@waifu.club"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN=true
 ENV DISPLAY=:0
-ENV PATH="/root/go/bin:${PATH}"
+ENV PATH="/root/go/bin:/root/.local/bin:${PATH}"
 RUN echo "nameserver 8.8.8.8" >> /etc/resolve.conf && echo "nameserver 1.1.1.1" >> /etc/resolve.conf
 WORKDIR /root/sources
 COPY sources /root/sources
