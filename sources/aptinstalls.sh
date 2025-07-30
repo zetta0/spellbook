@@ -28,5 +28,6 @@ aptinstall(){
 	firefox-esr \
 	burpsuite \
 	ruby \
-	feroxbuster
+	feroxbuster \
+	windows-binaries
 }
