@@ -29,5 +29,6 @@ aptinstall(){
 	burpsuite \
 	ruby \
 	feroxbuster \
-	windows-binaries
+	windows-binaries \
+ 	file
 }
