@@ -16,5 +16,6 @@ RUN ./installer.sh pipxinstall
 RUN pipx ensurepath
 #Set Zsh as Default
 RUN chsh -s $(which zsh)
+WORKDIR /root
 
 CMD ["zsh"]
