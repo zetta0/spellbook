@@ -10,3 +10,5 @@ end
 document init-gef
 Initializes GDB Expanded Framework
 end
+#Intel > ATT
+set disassembly-flavor intel
