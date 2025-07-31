@@ -9,8 +9,13 @@ sharpcollection(){
 	git clone https://github.com/Flangvik/SharpCollection.git /opt/SharpCollection
 }
 
+gef(){
+	mkdir -p /opt/gef
+ 	wget https://gef.blah.cat/py -O /opt/gef/gef.py
+}
 
 gitinstall(){
 	pwndbg
+ 	gef
 	sharpcollection
 }
