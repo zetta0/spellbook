@@ -1,7 +1,7 @@
 Currently working on:
 
 
-- [ ] Adding Havoc C2
+- [ ] Add Havoc C2
 - [X] Add GEF
 - [X] Add Pwndbg
 - [ ] Add peda 
