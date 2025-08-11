@@ -30,5 +30,6 @@ aptinstall(){
 	ruby \
 	feroxbuster \
 	windows-binaries \
- 	file
+ 	file \
+  	webshells
 }
