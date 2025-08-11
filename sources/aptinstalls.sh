@@ -31,5 +31,6 @@ aptinstall(){
 	feroxbuster \
 	windows-binaries \
  	file \
-  	webshells
+  	webshells \
+	openvpn
 }
