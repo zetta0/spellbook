@@ -32,5 +32,7 @@ aptinstall(){
 	windows-binaries \
  	file \
   	webshells \
-	openvpn
+	openvpn \
+ 	tcpdump \
+  	wireshark
 }
