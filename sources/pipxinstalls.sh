@@ -5,4 +5,5 @@ pipxinstall(){
 	pipx install impacket
 	pipx install certipy
 	pipx install git+https://github.com/aniqfakhrul/powerview.py
+ 	pipx install bloodyad
 }
