@@ -34,5 +34,6 @@ aptinstall(){
   	webshells \
 	openvpn \
  	tcpdump \
-  	wireshark
+  	wireshark \
+   	havoc
 }
