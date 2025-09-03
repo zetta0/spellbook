@@ -35,5 +35,6 @@ aptinstall(){
 	openvpn \
  	tcpdump \
   	wireshark \
-   	havoc
+   	havoc \
+	bloodhound
 }
