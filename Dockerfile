@@ -24,5 +24,5 @@ RUN pipx ensurepath
 RUN chsh -s $(which zsh)
 WORKDIR /root
 RUN useradd -m -s /usr/bin/zsh -G sudo ${UNAME}
-RUN echo "${UNAME}:${UPASS}" } chpasswrd
+RUN echo "${UNAME}:${UPASS}" | chpasswrd
 CMD ["zsh"]
