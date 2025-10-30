@@ -1,0 +1,7 @@
+#/bin/bash
+
+# Username
+USERNAME="test"
+
+# Password
+PASSWORD="test"
